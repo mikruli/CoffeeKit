@@ -15,7 +15,6 @@
 		1ED979A21A568B9400904C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED979A11A568B9400904C91 /* AppDelegate.m */; };
 		1ED979A51A568B9400904C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED979A31A568B9400904C91 /* Main.storyboard */; };
 		1ED979A81A568B9400904C91 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED979A71A568B9400904C91 /* MasterViewController.m */; };
-		1ED979AB1A568B9400904C91 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED979AA1A568B9400904C91 /* DetailViewController.m */; };
 		1ED979AD1A568B9400904C91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED979AC1A568B9400904C91 /* Images.xcassets */; };
 		1ED979B41A568B9400904C91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED979B31A568B9400904C91 /* XCTest.framework */; };
 		1ED979B51A568B9400904C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED979911A568B9400904C91 /* Foundation.framework */; };
@@ -31,6 +30,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1ED9798D1A568B9400904C91;
 			remoteInfo = CoffeeKit_gh;
+		};
+		1ED979D11A568CCD00904C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		1ED979D31A568CCD00904C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		1ED979D51A568CCD00904C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		1ED979D71A568CCD00904C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,14 +75,13 @@
 		1ED979A41A568B9400904C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ED979A61A568B9400904C91 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		1ED979A71A568B9400904C91 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		1ED979A91A568B9400904C91 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		1ED979AA1A568B9400904C91 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1ED979AC1A568B9400904C91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1ED979B21A568B9400904C91 /* CoffeeKit_ghTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeKit_ghTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED979B31A568B9400904C91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1ED979BB1A568B9400904C91 /* CoffeeKit_ghTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoffeeKit_ghTests-Info.plist"; sourceTree = "<group>"; };
 		1ED979BD1A568B9400904C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1ED979BF1A568B9400904C91 /* CoffeeKit_ghTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeKit_ghTests.m; sourceTree = "<group>"; };
+		1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +111,7 @@
 		1ED979851A568B9300904C91 = {
 			isa = PBXGroup;
 			children = (
+				1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */,
 				1ED979971A568B9400904C91 /* CoffeeKit_gh */,
 				1ED979B91A568B9400904C91 /* CoffeeKit_ghTests */,
 				1ED979901A568B9400904C91 /* Frameworks */,
@@ -115,13 +142,10 @@
 		1ED979971A568B9400904C91 /* CoffeeKit_gh */ = {
 			isa = PBXGroup;
 			children = (
-				1ED979A01A568B9400904C91 /* AppDelegate.h */,
-				1ED979A11A568B9400904C91 /* AppDelegate.m */,
+				1ED979C91A568CBB00904C91 /* AppDelegate */,
 				1ED979A31A568B9400904C91 /* Main.storyboard */,
 				1ED979A61A568B9400904C91 /* MasterViewController.h */,
 				1ED979A71A568B9400904C91 /* MasterViewController.m */,
-				1ED979A91A568B9400904C91 /* DetailViewController.h */,
-				1ED979AA1A568B9400904C91 /* DetailViewController.m */,
 				1ED979AC1A568B9400904C91 /* Images.xcassets */,
 				1ED979981A568B9400904C91 /* Supporting Files */,
 			);
@@ -155,6 +179,26 @@
 				1ED979BC1A568B9400904C91 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ED979C91A568CBB00904C91 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1ED979A01A568B9400904C91 /* AppDelegate.h */,
+				1ED979A11A568B9400904C91 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1ED979CB1A568CCC00904C91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ED979D21A568CCD00904C91 /* libRestKit.a */,
+				1ED979D41A568CCD00904C91 /* RestKitTests.xctest */,
+				1ED979D61A568CCD00904C91 /* RestKit.framework */,
+				1ED979D81A568CCD00904C91 /* RestKitFrameworkTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +264,12 @@
 			mainGroup = 1ED979851A568B9300904C91;
 			productRefGroup = 1ED9798F1A568B9400904C91 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1ED979CB1A568CCC00904C91 /* Products */;
+					ProjectRef = 1ED979CA1A568CCC00904C91 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1ED9798D1A568B9400904C91 /* CoffeeKit_gh */,
@@ -227,6 +277,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1ED979D21A568CCD00904C91 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 1ED979D11A568CCD00904C91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1ED979D41A568CCD00904C91 /* RestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.xctest;
+			remoteRef = 1ED979D31A568CCD00904C91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1ED979D61A568CCD00904C91 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 1ED979D51A568CCD00904C91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1ED979D81A568CCD00904C91 /* RestKitFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.xctest;
+			remoteRef = 1ED979D71A568CCD00904C91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1ED9798C1A568B9400904C91 /* Resources */ = {
@@ -257,7 +338,6 @@
 				1ED979A21A568B9400904C91 /* AppDelegate.m in Sources */,
 				1ED979A81A568B9400904C91 /* MasterViewController.m in Sources */,
 				1ED9799E1A568B9400904C91 /* main.m in Sources */,
-				1ED979AB1A568B9400904C91 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
